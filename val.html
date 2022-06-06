@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="reg1.js"></script>
+    <script> document.getElementById("dob").style.color = "red";
+    </script>
+
+    <style>
+        table,
+        td,
+        tr,
+        th {
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+            margin-left: 600px;
+            margin-top: 100px;
+            font-weight: bold;
+            border-radius: 30px;
+            border: dashed 10px rgba(1, 29, 27, 0.006);
+        }
+
+
+
+        table {
+            background-color: rgb(237, 237, 242);
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <!-- <div class="container mt-5">
+        <div class="row align-items-center" style="height:100vh;">
+            <div class="col-6 offset-md-3">
+                <form class="row g-3 needs-validation " novalidate>
+                    <div class="col-md-12">
+                        <label for="validationCustom01" class="form-label" >First name</label>
+                        <input type="text" class="form-control" id="validationCustom01" value="" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="validationCustom02" class="form-label" >Last name</label>
+                        <input type="text" class="form-control" id="validationCustom02" value="" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="validationCustomUsername" class="form-label">Username</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            <input type="text" class="form-control" id="validationCustomUsername"
+                                aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback">
+                                Please choose a username.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="validationCustom03" class="form-label">City</label>
+                        <input type="text" class="form-control" id="validationCustom03" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid city.
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="validationCustom04" class="form-label">State</label>
+                        <select class="form-select" id="validationCustom04" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option>...</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid state.
+                        </div>
+                    </div>
+                
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck">
+                                Agree to terms and conditions
+                            </label>
+                            <div class="invalid-feedback">
+                                You must agree before submitting.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-warning" type="submit">Submit form</button>
+                    </div> -->
+    </form>
+
+
+    </div>
+
+    </div>
+    </div>
+
+
+    <form action="" name="frm" onsubmit="return myfunction()">
+        <table>
+            <caption>singup
+                <th colspan="2" class="bg-info">REGISTERATION FROM</th>
+            <tr>
+                <td><label>NAME</label></td>
+                <td><input name="name" id="fm" type="text" placeholder="Enter your name"></td>
+            </tr>
+
+            <tr>
+                <td><label for="DOB">DOB</label></td>
+                <td><input type="date" name="dob" id="dob"></td>
+
+            </tr>
+            <tr>
+                <td><label for="GENDER">GENDER</label></td>
+                <td><input type="radio" name="gen">MALE
+                    <input type="radio" name="gen">FEMALE
+                    <input type="radio" name="gen">OTHERS
+                </td>
+            </tr>
+            <tr>
+                <td><label for="mobile">MOBILE NUMBER</label></td>
+                <td><input type="number" name="mnum" placeholder="9876543210"></td>
+
+            </tr>
+
+            <tr>
+                <td><label for="mail">Email id</label></td>
+                <td><input type="email" name="mail" placeholder="kk@gmail.com"></td>
+            </tr>
+            <tr>
+                <td> <label for="cars">Choose a payment:</label> </td>
+                <td> <select id="pay" name="pay">
+                        <option value="CASH" selected>CASH IN HAND</option>
+                        <option value="CARD">CARD (CREDIT OR DEBIT</option>
+                        <option value="ONLINE">ONLINE (GPAY OR PHONEPAY</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="time">FOOD TIMING <b>(**please tick the 3 checkboxes**)</b></label>
+                </td>
+                <td><input type="checkbox">BREAKFAST
+                    <input type="checkbox">LUNCH
+                    <input type="checkbox">DINNER
+                </td>
+
+            </tr>
+            <td colspan="2">
+                <div style="text-align: center;">
+                    <button type="submit" class="btn btn-outline-success" onclick="function1();">submit</button><button
+                        type="reset" class="btn btn-outline-danger" onclick="alert(`reset is sucess`)">reset</button>
+                </div>
+            </td>
+            </caption>
+        </table>
+
+    </form>
+    <br>
+    <footer class="bg-success">
+        <h1><a href="website1.html"> GO Back</a></h1>
+    </footer>
+    <!-- <script>
+        console.log('hi');
+    </script> -->
+</body>
+
+</html>

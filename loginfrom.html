@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN FORM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="validationlogin.js"></script>
+    <style>
+        form {
+            border: dashed 10px red;
+            font-size: xx-large;
+            width: 1400px;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            margin: 150px;
+            background-image: url(back.jpg);
+            padding-left: 400px;
+            border-radius: 120px;
+
+        }
+
+        body {
+            background-color:white;
+        }
+    </style>
+
+</head>
+
+<body>
+  
+        <h1 style="text-align:centerw ;">LOGIN FORM ...
+   
+    </h1>
+
+    <form action="website1.html" id="form-id">
+        <table>
+            <tr>
+                <td> <label for="name" class="bg-warning">NAME </label> </td>
+                <td> <input type="text" name="name" id="name" placeholder="ex:kumaran"></td>
+            </tr>
+
+            <br>
+            <tr>
+                <td><label for="email" class="bg-warning">Email</label></td>
+                <td><input type="email" id="mail" name="mail" placeholder="kk@gmail.com"></td>
+            </tr>
+             <br>
+             <tr>
+                 <td><label for="password" class="bg-warning">password</label></td>
+                 <td><input type="password" id="password" name="password" placeholder="0987654321"></td>
+             </tr>
+
+            <td><input type="button" value="Login" id="submit" onclick="validate()" /> </td>
+            <td><button type="reset" class="btn-danger">RESET</button></td>
+
+        </table>
+    </form>
+    <br>
+    <br>
+    <div class="boder border-info"><a href="val.html">BACK TO SIGNIN</a></div>
+
+
+
+</body>
+
+</html>
